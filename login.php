@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<script type="text/javascript">
 		function loginsuccessfully() {
-			setTimeout("window.location ='index.html'", 1000);
+			setTimeout("window.location ='index.php'", 1000);
 		}
 
 		function loginfailed() {
@@ -16,22 +16,21 @@
 </head>
 <body>
 	<?php
-		$host = 'localhost';
-		$user = 'root';
-		$pass = '';
-		$banco = 'skate';
-		$conexao = mysql_connect($host, $user, $pass) or die(mysql_error());
-		mysql_select_db($banco) or die(mysql_error());
+		include_once("conexao.php");
 
 		$email = $_POST['email'];
-		$senha = $_POST['senha'];
+		$senha = md5($_POST['senha']);
 		$sql = mysql_query("SELECT * FROM cliente WHERE email = '$email' and senha = '$senha'  ") or die(mysql_error());
 		$row = mysql_num_rows($sql);
 
-		if ($row > 0) {
+		if (isset($_POST['email']) && strlen($_POST['email']) > 0) {
+			
+
 			session_start();
 			$_SESSION['email'] = $_POST['email'];
-			$_SESSION['email'] = $_POST['email'];
+			$_SESSION['senha'] = md5($_POST['senha']);
+
+			$sql_code = "SELECT senha, email FROM usuario WHERE email = '". $_SESSION['email'] . "'";
 
 			echo "<center>Autenticando..</center>";
 			echo "<script>loginsuccessfully()</script>";
