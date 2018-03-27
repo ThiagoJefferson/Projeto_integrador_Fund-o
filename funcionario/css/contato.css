@@ -1,0 +1,16 @@
+.contato h1{
+  font-size: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.contato input[type="text"] { border: 1px solid #E2E2E2; }
+
+.contato a{
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+}
+
+.contato textarea{
+	border: 1px solid #E2E2E2;
+}

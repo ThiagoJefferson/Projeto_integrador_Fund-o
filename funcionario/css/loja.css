@@ -1,0 +1,58 @@
+.collapse{
+	color: ;
+	font-size: 12px;
+	size: 12px;
+}
+
+.form-control  {
+	margin-right: 110px;
+	 float: left;
+	 size: 12px;
+	 width: 50px;
+	 }
+
+.form-inline{
+	margin-right: 680px;
+	size: 10px;
+	font-size: 20px;
+	padding: 30px;
+}
+
+.loginInicio a{
+  font-size: 12px;
+  color: black;
+}
+
+.navbar-brand {
+	color: black;
+	padding: 20px;
+}
+
+.bg-light{
+	background-color: none;
+}
+
+.nav-link li:a{
+	font-size: 14px;
+}
+
+.nav-item a{
+	font-size: 14px;
+	margin-right: 18px;
+
+}
+
+.login a1{
+	float: left;
+	margin-left: 1390px;
+	margin-right: 10px;
+	padding: 7px;
+	font-size: 12px;
+	font-family: 'Oswald', sans-serif;
+}
+
+.login btn-secondary{
+	background-color: white;
+}
+
+

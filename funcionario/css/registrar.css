@@ -1,0 +1,29 @@
+.registrar h1{
+font-size: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+
+.registrar a{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+}
+
+.registrar h{
+	font-size:  17px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.registrar a1{
+	font-size: 15px;
+}
+
+.registrar input[type="text"] { 
+	border: 1px solid #E2E2E2; 
+}
+
+.registrar input{
+  border: 1px solid #E2E2E2;
+}
+
+}

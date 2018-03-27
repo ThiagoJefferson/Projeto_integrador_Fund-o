@@ -1,0 +1,8 @@
+ *{padding:1; margin: 5; border: 5; box-sizing: border-box;}
+
+.blocoIcones{float:right; width: 13%; height: 35px; margin-left: 50px; margin-right: 100px; px; border: 2px solid #D7D7D7; border-radius: 5px;}
+    .blocoIcones input[type='text']{float:left; width: 80%; height:100%; border: none; background: transparent; padding: 0 10px;}
+    .blocoIcones button{float:left; width: 20%; height:100%; border: none; background: #fffcfc; cursor: pointer;}
+    .blocoIcones svg{width: 55%; height: 50%; fill: #555;}
+    .blocoIcones button:hover svg{fill: #000000;}
+
